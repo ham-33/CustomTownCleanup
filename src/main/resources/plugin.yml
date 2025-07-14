@@ -1,0 +1,16 @@
+name: CustomTownCleanup
+version: '1.0.0'
+main: marvtechnology.customTownCleanup.CustomTownCleanup
+api-version: '1.20'
+folia-supported: true
+authors:
+  - mask
+commands:
+  townprotect:
+    description: "Town/Nation の自動削除保護を管理 (追加・解除・一覧)"
+    usage: "/townprotect <add|remove|list> <TownOrNationName>"
+
+permissions:
+  customcleanup.protect:
+    description: "Town/Nation 削除保護コマンドを使用可能"
+    default: op
