@@ -3,7 +3,8 @@ cleanup:
   interval-seconds: 86400   # 24時間ごとにチェックしたい場合は 86400
 
 # Discord 通知用 Webhook URL（削除1日前の警告に使用）
-discord_webhook_url: "https://discord.com/api/webhooks/1394235685514379285/W4eBscSdN2B4zaAoJKM_5fj0aVgWxnSBpC46sBLOP04-PlGN1_I8EMursDNVj1fBvnSE"
+# ※ 実際の URL をここに記入してください
+discord_webhook_url: "YOUR_WEBHOOK_URL_HERE"
 
 # 通知形式："embed"（埋め込み） または "plain"（テキストのみ）
 message_type: "embed"
