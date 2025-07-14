@@ -42,6 +42,10 @@ public final class YamlStore {
     public void save()                         { try { conf.save(file); } catch (IOException e) { plugin.getLogger().log(Level.SEVERE, "保存失敗", e); } }
     public boolean contains(String p)          { return conf.contains(p); }
     public String  getString(String p)         { return conf.getString(p); }
+    public String  getString(String p, String def) {
+        String v = conf.getString(p);
+        return v != null ? v : def;
+    }
     public long    getLong(String p, long def) { return conf.getLong(p, def); }
     public boolean getBoolean(String p, boolean def){ return conf.getBoolean(p, def); }
     public void    set(String p, Object v)     { conf.set(p, v); }
